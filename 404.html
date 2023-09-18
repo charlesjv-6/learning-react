@@ -6,12 +6,44 @@
     <script>
         sessionStorage.redirect = location.href;
     </script>      
+    <style>
+        .no-page {
+            color: var(--text);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .no-page h1 {
+            text-align: center;
+        }
+        .no-page h1 span{
+            background: linear-gradient(to left, var(--primary), var(--text), var(--accent));
+            color: transparent;
+            background-clip: text;
+            font-weight: bolder;
+            font-size: larger;
+        }
+        .no-page a{
+            width: fit-content;
+            text-decoration: none;
+            font-weight: bolder;
+            font-size: larger;
+            color: var(--text);
+            padding: 2%;
+            margin-top: 2%;
+            background-size: 100% 100%;
+            background-position: center;
+            border: 3px solid;
+            border-image-source: linear-gradient(to left, var(--primary), var(--text), var(--accent));
+            border-image-slice: 1;
+        }
+    </style>
     <title>404 Error</title>
 </head>
 <body>
     <div className='no-page'>
         <h1>ERROR <span>404</span><br /> Page not found</h1>
-        <a href="/PortfolioReact/home">Go Back</a>
+        <a href="https://cjvendicacion.github.io/PortfolioReact/home">Go Back</a>
     </div>
 </body>
 </html>
